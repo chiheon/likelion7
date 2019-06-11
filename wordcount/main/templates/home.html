@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="my-5 mx-auto card" style="text-align: center;">
+      <div class='card-header'>
+        <h1>WordCount</h1>
+      </div>
+      <div class='card-body'>
+        <p>글자 카운팅 서비스</p>
+      <div class="mx-auto card-content">
+        <form class="form-inline" action="{%url 'result'%}" style="display: block">
+          <div class="card-content">
+            <textarea name="fulltext" cols="80" rows="10"></textarea>
+          </div>
+          <input type="submit" value="count" class="btn mx-auto" style="display:block">
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+    

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="my-5 mx-auto card" style="text-align: center;">
+    <div class='card-header'>
+      <h1>WordCount</h1>
+    </div>
+    <div class='card-body'>
+      <p>총 갯수 : {{total}}</p>
+  {% for word, count in dict %}
+    <button type="button" class="btn btn-lg btn-secondary my-2 mx-2" disabled style="border-radius:6px;">
+      {{word}}<span class="badge badge-pill badge-info" style="font-size: 12px; padding-top: 6px; padding-bottom: 6px;">{{count}}개</span>
+    </button>
+  {% endfor %}   
+  </div>
+</div>
+{% endblock %}
