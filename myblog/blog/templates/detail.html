@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <br>
+    <div class="container">
+      <h1>자세한 내용을 알려주는 페이지입니다</h1>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ details.title }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ details.pub_date }}</h6>
+          <p class="card-text">{{ details.body }}</p>
+          <p class="text-right"><a href="/" class="card-link">...back</a></p>
+        </div>
+      </div> <br>
+    </div>
+{% endblock %}
